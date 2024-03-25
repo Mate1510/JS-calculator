@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed;
+}
+
+.main-title {
+  color: #464646;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+.main-title span {
+  color: #f2a43b;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 25%;
+  overflow: hidden;
+  background-color: #464646;
+  margin: 40px 0;
+}
+
+.result {
+  display: flex;
+  height: 15vh;
+  align-items: end;
+  justify-content: end;
+  padding: 1rem;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.1rem;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.bg-gray {
+  background-color: #585858;
+}
+
+.bg-light-gray {
+  background-color: #747474;
+}
+
+.bg-orange {
+  background-color: #f2a43b;
+}
+
+footer {
+  color: #464646;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 40;
+}
